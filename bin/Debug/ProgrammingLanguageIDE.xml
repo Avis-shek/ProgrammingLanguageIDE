@@ -1,0 +1,211 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ProgrammingLanguageIDE</name>
+    </assembly>
+    <members>
+        <member name="M:ProgrammingLanguageIDE.CommandParser.CommadParam(System.String[])">
+            <summary>
+            This method is used to create different shape according to the user command.
+            </summary>
+            <param name="command">A string array containing the command and its parameters</param>
+            <returns>A shape object corresponding to the specified command</returns>
+        </member>
+        <member name="M:ProgrammingLanguageIDE.CommandParser.verify_while_statement(System.String,System.String)">
+            <summary>
+            This method is used to verify a while statement and to know when the reading is done.
+            </summary>
+            <param name="Statement">The condition of the while statement.</param>
+            <param name="lastStatement">The last statement of the code block.</param>
+            <returns>A boolean value indicating whether the while statement is still active or not.</returns>
+        </member>
+        <member name="M:ProgrammingLanguageIDE.CommandParser.ConvertValueIntoInt(System.String)">
+            <summary>
+            This method is to check if the given varibale is direct value or a varibale. If it is direct value then this methods convert it into integer and if it's a varibale it gives the correspondng value to that varibale
+            </summary>
+            <param name="Variablevalue">A varible that holds value and is here to be converted into string</param>
+            <returns></returns>
+        </member>
+        <member name="M:ProgrammingLanguageIDE.CommandParser.whileOperation(System.String,System.String,System.String,System.Collections.Generic.List{System.String})">
+            <summary>
+            This method is used to perform operations within a while loop.
+            </summary>
+            <param name="left_value">The left value in the comparison statement</param>
+            <param name="right_value">The right value in the comparison statement</param>
+            <param name="Operator">The operator used in the comparison statement</param>
+            <param name="statement">A list of statements to be executed within the while loop</param>
+        </member>
+        <member name="M:ProgrammingLanguageIDE.CommandParser.verify_if_statement(System.String,System.String)">
+            <summary>
+            This method is used to verify an if statement and to know when the reading is done.
+            </summary>
+            <param name="variable">The condition of the if statement.</param>
+            <param name="lastStatement">The last statement of the code block.</param>
+            <returns>A boolean value indicating whether the if statement is still active or not.</returns>
+        </member>
+        <member name="M:ProgrammingLanguageIDE.CommandParser.one_line_if_statement(System.String)">
+            <summary>
+            his method is used to handle one-line if statement.
+            </summary>
+            <param name="variable">The if statement in string format.</param>
+        </member>
+        <member name="M:ProgrammingLanguageIDE.CommandParser.MultiLine_if_statement(System.Collections.Generic.List{System.String})">
+            <summary>
+            his method is for handling a multi-line if statement.
+            </summary>
+            <param name="MulIfStatement">The multi if statement in string format</param>
+        </member>
+        <member name="M:ProgrammingLanguageIDE.Form1.closeBtn_Click(System.Object,System.EventArgs)">
+            <summary>
+            A method to exit from the application if user wish to
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProgrammingLanguageIDE.Form1.ReadProgrammingArea(System.String)">
+            <summary>
+            Reset varibales or dictionary or list, Read everything from programming area  and send each statement to the respective methods to identify the statement type and execute accordingly
+            </summary>
+            <param name="Source">To identify the source</param>
+        </member>
+        <member name="M:ProgrammingLanguageIDE.Form1.setPenColor(System.String)">
+            <summary>
+            setting given color to pen pen color so that user can draw and fill shapes in different color
+            </summary>
+            <param name="color"> A variable that contains user selected color</param>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:ProgrammingLanguageIDE.Form1.setFillStatus(System.String)" -->
+        <member name="M:ProgrammingLanguageIDE.Form1.fillValidation(System.String)">
+            <summary>
+            validates the fill command and thrwos error if there any and set the fill status accordingly 
+            </summary>
+            <param name="FillWithParam"> A variable that contains fill status to be validated </param>
+        </member>
+        <member name="M:ProgrammingLanguageIDE.Form1.penValidation(System.String)">
+            <summary>
+            validates the pen command, Throw error if there any and set the pen color accordingly
+            </summary>
+            <param name="color"> A varibale that holds user given color to be validate</param>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:ProgrammingLanguageIDE.Form1.CommandCheck(System.String[])" -->
+        <member name="M:ProgrammingLanguageIDE.Form1.CommandLine_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+            <summary>
+            Get text from commandline if the user press enter and act on it accordingly
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProgrammingLanguageIDE.Form1.minimizeBtn_Click(System.Object,System.EventArgs)">
+            <summary>
+            This method allows user to minimize the window
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProgrammingLanguageIDE.Form1.MaximizeBtn_Click(System.Object,System.EventArgs)">
+            <summary>
+            This method allows user to maximize the application window
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProgrammingLanguageIDE.Form1.saveFile">
+            <summary>
+            This method allow user to save the written code on programming area as .cs file
+            </summary>
+        </member>
+        <member name="M:ProgrammingLanguageIDE.Form1.openToolStripMenuItem_Click(System.Object,System.EventArgs)">
+            <summary>
+            This methoid is to open .cs file on application, Read everything from it and write it on the programming area 
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProgrammingLanguageIDE.Form1.saveToolStripMenuItem_Click(System.Object,System.EventArgs)">
+            <summary>
+            This method calls another method which saves the written code on programming area and save it as .cs file
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProgrammingLanguageIDE.Form1.CommandLine_MouseDown(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            This method is to clear commandline when mouse is clicked on it 
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProgrammingLanguageIDE.Form1.timer1_Tick(System.Object,System.EventArgs)">
+            <summary>
+            This method stops the timer after 3 second 
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProgrammingLanguageIDE.Form1.msgPopup(System.String)">
+            <summary>
+            This method is for popUp on application window when user give the commad "RESET" and also to enable and start the timer 
+            </summary>
+            <param name="text">A text to displayed on popup</param>
+        </member>
+        <member name="M:ProgrammingLanguageIDE.Form1.executeBtn_Click_1(System.Object,System.EventArgs)">
+            <summary>
+            This methos is written to execute everythig that is typed on programming area 
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProgrammingLanguageIDE.Form1.Validate_Click(System.Object,System.EventArgs)">
+            <summary>
+            This method is written to validate every single line that is written on programming area before execution
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:ProgrammingLanguageIDE.Form1.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ProgrammingLanguageIDE.Form1.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ProgrammingLanguageIDE.Form1.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:ProgrammingLanguageIDE.Method.Operate_Method(System.String,System.Boolean,System.String)">
+            <summary>
+            Performs action for method to operate
+            </summary>
+            <param name="text">contains parameters, statements from within method</param>
+            <returns></returns>
+        </member>
+        <member name="M:ProgrammingLanguageIDE.Program.Main">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+        <member name="T:ProgrammingLanguageIDE.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:ProgrammingLanguageIDE.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:ProgrammingLanguageIDE.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+    </members>
+</doc>
